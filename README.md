@@ -19,7 +19,7 @@ FastqSubsample(ifastq, ofastq, nSubsample, seed = seed)
 - `ifastq`: File path of an input FASTQ file. Interpret as gzipped file if it ends with `.gz`.
 - `ofastq`: File path of a subsampled FASTQ file. Interpret as gzipped file if it ends with `.gz`.
 - `nSubsample`: The number of reads after subsampling.
-- `seed`: Seed.
+- `seed`: Seed. The same seeds will generate the same output files.
 
 For paired end reads:
 
@@ -31,7 +31,7 @@ FastqSubsample("in.R2.fastq.gz", "out.R2.fastq.gz", nSubsample, seed = seed)
 ```
 
 ## Docker image
-You can run FastqSubsample as a docker image.
+You can run FastqSubsample as a docker image.  
 Note that you need to specify directories to mount using `-v` option.
 
 ```
