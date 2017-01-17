@@ -10,6 +10,11 @@ Subsample sequenced reads in FASTQ formt using Julia
 Reservoir sampling (https://en.wikipedia.org/wiki/Reservoir_sampling) + Loading FASTQ twice
 
 
+## Install
+```
+Pkg.clone("git@github.com:yuifu/FastqSubsample.git")
+```
+
 ## Usage
 ```
 using FastqSubsample.jl
