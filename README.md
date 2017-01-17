@@ -31,10 +31,13 @@ FastqSubsample("in.R2.fastq.gz", "out.R2.fastq.gz", nSubsample, seed = seed)
 ```
 
 ## Docker image
-https://hub.docker.com/r/yuifu/fastqsubsample/
+You can run FastqSubsample as a docker image.
+Note that you need to specify directories to mount using `-v` option.
 
 ```
 docker run --rm yuifu/fastqsubsample:1.0.0 $ifastq $ofastq $nSubsample $seed
 ```
 
-Note that you need to specify directories to mount using `-v` option.
+
+
+Docker Hub: https://hub.docker.com/r/yuifu/fastqsubsample/
