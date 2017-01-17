@@ -30,5 +30,11 @@ FastqSubsample("in.R1.fastq.gz", "out.R1.fastq.gz", nSubsample, seed = seed)
 FastqSubsample("in.R2.fastq.gz", "out.R2.fastq.gz", nSubsample, seed = seed)
 ```
 
-## TODO
-- [ ] Make docker image
+## Docker image
+https://hub.docker.com/r/yuifu/fastqsubsample/
+
+```
+docker run --rm yuifu/fastqsubsample:1.0.0 $ifastq $ofastq $nSubsample $seed
+```
+
+Note that you need to specify directories to mount using `-v` option.
