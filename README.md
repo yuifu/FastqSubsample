@@ -13,7 +13,7 @@ https://en.wikipedia.org/wiki/Reservoir_sampling
 
 ## Usage
 ```
-include("FastqSubsample4.jl")
+using FastqSubsample.jl
 FastqSubsample(ifastq, ofastq, nSubsample, seed = seed)
 ```
 
