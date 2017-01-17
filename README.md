@@ -25,7 +25,7 @@ FastqSubsample(ifastq, ofastq, nSubsample, seed = seed)
 For paired end reads:
 
 ```
-include("FastqSubsample.jl")
+using FastqSubsample.jl
 seed = 123456
 FastqSubsample("in.R1.fastq.gz", "out.R1.fastq.gz", nSubsample, seed = seed)
 FastqSubsample("in.R2.fastq.gz", "out.R2.fastq.gz", nSubsample, seed = seed)
