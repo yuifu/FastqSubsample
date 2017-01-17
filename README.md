@@ -6,9 +6,8 @@ Subsample sequenced reads in FASTQ formt using Julia
 * Smaller 'maximum memory usage' than `seqtk` when subsampling 100M reads from a FASTQ file with 481M reads
 
 
-## Algorithm
-Reservoir sampling
-https://en.wikipedia.org/wiki/Reservoir_sampling
+## Methods
+Reservoir sampling (https://en.wikipedia.org/wiki/Reservoir_sampling) + Loading FASTQ twice
 
 
 ## Usage
